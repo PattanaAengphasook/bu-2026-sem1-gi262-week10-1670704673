@@ -6,23 +6,30 @@ namespace MidtermExam.Prob01
     public class VowelCounter
     {
         /// <summary>
-        /// ข้อ 01: นับจำนวนสระภาษาอังกฤษตัวพิมพ์เล็กในคิว โดยใช้หลัก FIFO
-        /// (สมาชิกที่เข้าก่อนออกก่อน) และรักษาสมาชิกกับลำดับของคิวเดิม
+        /// ��� 01: �Ѻ�ӹǹ��������ѧ��ɵ�Ǿ�������㹤�� ������ѡ FIFO
+        /// (��Ҫԡ�����ҡ�͹�͡��͹) ����ѡ����Ҫԡ�Ѻ�ӴѺ�ͧ������
         /// </summary>
         /// <param name="alphabets">
-        /// คิวข้อความที่ต้องการตรวจ นับเฉพาะ "a", "e", "i", "o", "u" และนับตัวซ้ำทุกตัว
-        /// ข้อความอื่น เช่น "A", "ae", ข้อความว่าง และสมาชิก null ไม่นับเป็นสระ
+        /// ��Ǣ�ͤ�������ͧ��õ�Ǩ �Ѻ੾�� "a", "e", "i", "o", "u" ��йѺ��ǫ�ӷء���
+        /// ��ͤ������ �� "A", "ae", ��ͤ�����ҧ �����Ҫԡ null ���Ѻ�����
         /// </param>
-        /// <returns>จำนวนสระทั้งหมด หรือ 0 เมื่อคิวเป็น null หรือไม่มีสมาชิก</returns>
+        /// <returns>�ӹǹ��з����� ���� 0 ����ͤ���� null �����������Ҫԡ</returns>
         /// <remarks>
-        /// ตัวแปร Queue<string> alphabets หลังจากจบ function จะต้องยังคงข้อมูลให้เหมือนเดิมทั้งจำนวนและลำดับ
-        /// HINT: อ่านข้อมูลด้วย Dequeue() และใส่กลับด้วย Enqueue() ในคิวที่รับมา
-        /// ตัวอย่าง: ["a", "b", "e", "a"] จะต้อง return 3 
-        /// และคิวหลังเรียกยังเป็น ["a", "b", "e", "a"] เหมือนเดิม
+        /// ����� Queue<string> alphabets ��ѧ�ҡ�� function �е�ͧ�ѧ���������������͹�����駨ӹǹ����ӴѺ
+        /// HINT: ��ҹ�����Ŵ��� Dequeue() �������Ѻ���� Enqueue() 㹤�Ƿ���Ѻ��
+        /// ������ҧ: ["a", "b", "e", "a"] �е�ͧ return 3 
+        /// ��Ф����ѧ���¡�ѧ�� ["a", "b", "e", "a"] ����͹���
         /// </remarks>
         public int AS01_CountVowels(Queue<string> alphabets)
         {
-            // TODO: เขียนคำตอบแทนคำสั่ง throw exception ด้านล่าง
+            // TODO: ��¹�ӵͺ᷹����� throw exception ��ҹ��ҧ
+            Queue<int> numberQueue = new Queue<int>();
+            numberQueue.Enqueue(1);
+            numberQueue.Enqueue(2);
+            numberQueue.Enqueue(3);
+            numberQueue.Enqueue(4);
+            numberQueue.Enqueue(5);
+            int firstnumber = numberQueue.Dequeue();
             throw new NotImplementedException();
         }
     }
